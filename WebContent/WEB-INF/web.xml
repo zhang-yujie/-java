@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>recruitPortal</display-name>
+  <welcome-file-list>
+    <welcome-file>Index</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 配置一个过滤器，用于拦截所有的请求 -->
+  <filter>
+    <display-name>BaseFilter</display-name>
+    <filter-name>BaseFilter</filter-name>
+    <filter-class>com.cqut.recruitPortal.servlet.BaseFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>BaseFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>OperatorTypeServlet</display-name>
+    <servlet-name>OperatorTypeServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorTypeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorTypeServlet</servlet-name>
+    <url-pattern>/admin/OperatorTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>处理用户登录</description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AdminServlet</display-name>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsTypeServlet</display-name>
+    <servlet-name>NewsTypeServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsTypeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsTypeServlet</servlet-name>
+    <url-pattern>/admin/NewsTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsSerlvet</display-name>
+    <servlet-name>NewsSerlvet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsSerlvet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsSerlvet</servlet-name>
+    <url-pattern>/admin/NewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorServlet</display-name>
+    <servlet-name>OperatorServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorServlet</servlet-name>
+    <url-pattern>/admin/OperatorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PermissionServlet</display-name>
+    <servlet-name>PermissionServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.PermissionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PermissionServlet</servlet-name>
+    <url-pattern>/admin/PermissionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorTypeAddServlet</display-name>
+    <servlet-name>OperatorTypeAddServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorTypeAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorTypeAddServlet</servlet-name>
+    <url-pattern>/admin/OperatorTypeAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorTypeInitEdit</display-name>
+    <servlet-name>OperatorTypeInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorTypeInitEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorTypeInitEdit</servlet-name>
+    <url-pattern>/admin/OperatorTypeInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorTypeEditServlet</display-name>
+    <servlet-name>OperatorTypeEditServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorTypeEditServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorTypeEditServlet</servlet-name>
+    <url-pattern>/admin/OperatorTypeEditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorTypeDelete</display-name>
+    <servlet-name>OperatorTypeDelete</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorTypeDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorTypeDelete</servlet-name>
+    <url-pattern>/admin/OperatorTypeDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsTypeAdd</display-name>
+    <servlet-name>NewsTypeAdd</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsTypeAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsTypeAdd</servlet-name>
+    <url-pattern>/admin/NewsTypeAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsTypeInitEdit</display-name>
+    <servlet-name>NewsTypeInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsTypeInitEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsTypeInitEdit</servlet-name>
+    <url-pattern>/admin/NewsTypeInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsTypeEdit</display-name>
+    <servlet-name>NewsTypeEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsTypeEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsTypeEdit</servlet-name>
+    <url-pattern>/admin/NewsTypeEdit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsTypeDelete</display-name>
+    <servlet-name>NewsTypeDelete</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsTypeDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsTypeDelete</servlet-name>
+    <url-pattern>/admin/NewsTypeDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorInitAdd</display-name>
+    <servlet-name>OperatorInitAdd</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorInitAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorInitAdd</servlet-name>
+    <url-pattern>/admin/OperatorInitAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorAdd</display-name>
+    <servlet-name>OperatorAdd</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorAdd</servlet-name>
+    <url-pattern>/admin/OperatorAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorDetail</display-name>
+    <servlet-name>OperatorDetail</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorDetail</servlet-name>
+    <url-pattern>/admin/OperatorDetail</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorDelete</display-name>
+    <servlet-name>OperatorDelete</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorDelete</servlet-name>
+    <url-pattern>/admin/OperatorDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorInitEdit</display-name>
+    <servlet-name>OperatorInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorInitEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorInitEdit</servlet-name>
+    <url-pattern>/admin/OperatorInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PhotoUpload</display-name>
+    <servlet-name>PhotoUpload</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.PhotoUpload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PhotoUpload</servlet-name>
+    <url-pattern>/admin/PhotoUpload</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorEdit</display-name>
+    <servlet-name>OperatorEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.OperatorEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorEdit</servlet-name>
+    <url-pattern>/admin/OperatorEdit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoadImage</display-name>
+    <servlet-name>LoadImage</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.LoadImage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoadImage</servlet-name>
+    <url-pattern>/LoadImage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PermissionInitEdit</display-name>
+    <servlet-name>PermissionInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.PermissionInitEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PermissionInitEdit</servlet-name>
+    <url-pattern>/admin/PermissionInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PermissionEdit</display-name>
+    <servlet-name>PermissionEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.PermissionEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PermissionEdit</servlet-name>
+    <url-pattern>/admin/PermissionEdit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminLogin</display-name>
+    <servlet-name>AdminLogin</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.AdminLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLogin</servlet-name>
+    <url-pattern>/admin/AdminLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminLogout</display-name>
+    <servlet-name>AdminLogout</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.AdminLogout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLogout</servlet-name>
+    <url-pattern>/admin/AdminLogout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsAdd</display-name>
+    <servlet-name>NewsAdd</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsAdd</servlet-name>
+    <url-pattern>/admin/NewsAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsInitAdd</display-name>
+    <servlet-name>NewsInitAdd</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsInitAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsInitAdd</servlet-name>
+    <url-pattern>/admin/NewsInitAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsPublish</display-name>
+    <servlet-name>NewsPublish</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsPublish</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsPublish</servlet-name>
+    <url-pattern>/admin/NewsPublish</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsCanclePublish</display-name>
+    <servlet-name>NewsCanclePublish</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsCanclePublish</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsCanclePublish</servlet-name>
+    <url-pattern>/admin/NewsCanclePublish</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsDelete</display-name>
+    <servlet-name>NewsDelete</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsDelete</servlet-name>
+    <url-pattern>/admin/NewsDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsInitEdit</display-name>
+    <servlet-name>NewsInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsInitEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsInitEdit</servlet-name>
+    <url-pattern>/admin/NewsInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsEdit</display-name>
+    <servlet-name>NewsEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsEdit</servlet-name>
+    <url-pattern>/admin/NewsEdit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsDetail</display-name>
+    <servlet-name>NewsDetail</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsDetail</servlet-name>
+    <url-pattern>/admin/NewsDetail</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>IndexQuerySerlvet</display-name>
+    <servlet-name>IndexQuerySerlvet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.IndexQuerySerlvet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexQuerySerlvet</servlet-name>
+    <url-pattern>/IndexQuerySerlvet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Index</display-name>
+    <servlet-name>Index</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.Index</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseTypeServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseTypeInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseTypeInitEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseTypeEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseTypeEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseTypeDelete</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseTypeDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseTypeAdd</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseTypeAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseDetail</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseInitEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseIntroductionServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseIntroductionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsExaminationServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.NewsExaminationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseResearch</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseResearch</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IndexService</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.IndexService</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModuleColumnServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.ModuleColumnServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModuleColumnInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.ModuleColumnInitEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModuleColumnEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.ModuleColumnEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModuleColumnDelete</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.ModuleColumnDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>test222</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.test222</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CGMPhotoUpload</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CGMPhotoUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CGMPhotoServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CGMPhotoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CGMPhotoDelete</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CGMPhotoDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Initial</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.Initial</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QQDataGet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.QQDataGet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CommentSubmit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CommentSubmit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModuleNewsTypeServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.ModuleNewsTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>testAjax</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.testAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherTeamServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.TeacherTeamServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherTeamAdd</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.TeacherTeamAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherTeamInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.TeacherTeamInitEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherTeamPhotoUpload</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.TeacherTeamPhotoUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherTeamEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.TeacherTeamEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherTeamDetail</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.TeacherTeamDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherTeamDelete</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.TeacherTeamDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CharacterFunctionsServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CharacterFunctionsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>characterFunctionsInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.characterFunctionsInitEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CharacterFunctionsEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CharacterFunctionsEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CharacterDistribution</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CharacterDistribution</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CharacterDistributionInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CharacterDistributionInitEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CharacterDistributionEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CharacterDistributionEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IndexPermissionInit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.IndexPermissionInit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ColumnNameManageServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.ColumnNameManageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModuleColumnTypeServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.ModuleColumnTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModuleColumnTypeInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.ModuleColumnTypeInitEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModuleColumnTypeEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.ModuleColumnTypeEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LinksServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.LinksServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LinksInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.LinksInitEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LinksEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.LinksEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LinksDelete</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.LinksDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LinksAdd</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.LinksAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WebTitleInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.WebTitleInitEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WebTitleEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.WebTitleEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePassword</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.ChangePassword</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddMessageServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.AddMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MessageManagement</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.MessageManagement</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateMessageServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.UpdateMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteMessageServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.DeleteMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckMessageServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CheckMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Test1</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.Test1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PublishMessageServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.PublishMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseTeam</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseTeam</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherDetail</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.TeacherDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseConstruction</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseConstruction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseResourse</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseResourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResourseImgUpload</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.ResourseImgUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseResourseServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.CourseResourseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteResourseServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.DeleteResourseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateResourseServlet</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.UpdateResourseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RowNumberInitEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.RowNumberInitEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RowNumberEdit</servlet-name>
+    <servlet-class>com.cqut.recruitPortal.servlet.RowNumberEdit</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Index</servlet-name>
+    <url-pattern>/Index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseTypeServlet</servlet-name>
+    <url-pattern>/admin/CourseTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseTypeInitEdit</servlet-name>
+    <url-pattern>/admin/CourseTypeInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseTypeEdit</servlet-name>
+    <url-pattern>/admin/CourseTypeEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseTypeDelete</servlet-name>
+    <url-pattern>/admin/CourseTypeDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseTypeAdd</servlet-name>
+    <url-pattern>/admin/CourseTypeAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseServlet</servlet-name>
+    <url-pattern>/admin/CourseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseDetail</servlet-name>
+    <url-pattern>/admin/CourseDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseInitEdit</servlet-name>
+    <url-pattern>/admin/CourseInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseEdit</servlet-name>
+    <url-pattern>/admin/CourseEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseIntroductionServlet</servlet-name>
+    <url-pattern>/CourseIntroductionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsExaminationServlet</servlet-name>
+    <url-pattern>/admin/NewsExaminationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseResearch</servlet-name>
+    <url-pattern>/CourseResearch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexService</servlet-name>
+    <url-pattern>/admin/IndexService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModuleColumnServlet</servlet-name>
+    <url-pattern>/admin/ModuleColumnServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModuleColumnInitEdit</servlet-name>
+    <url-pattern>/admin/ModuleColumnInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModuleColumnEdit</servlet-name>
+    <url-pattern>/admin/ModuleColumnEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModuleColumnDelete</servlet-name>
+    <url-pattern>/admin/ModuleColumnDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>test222</servlet-name>
+    <url-pattern>/test222</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CGMPhotoUpload</servlet-name>
+    <url-pattern>/admin/CGMPhotoUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CGMPhotoServlet</servlet-name>
+    <url-pattern>/admin/CGMPhotoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CGMPhotoDelete</servlet-name>
+    <url-pattern>/admin/CGMPhotoDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Initial</servlet-name>
+    <url-pattern>/Initial</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QQDataGet</servlet-name>
+    <url-pattern>/QQDataGet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentSubmit</servlet-name>
+    <url-pattern>/CommentSubmit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModuleNewsTypeServlet</servlet-name>
+    <url-pattern>/admin/ModuleNewsTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>testAjax</servlet-name>
+    <url-pattern>/testAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherTeamServlet</servlet-name>
+    <url-pattern>/admin/TeacherTeamServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherTeamAdd</servlet-name>
+    <url-pattern>/admin/TeacherTeamAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherTeamInitEdit</servlet-name>
+    <url-pattern>/admin/TeacherTeamInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherTeamPhotoUpload</servlet-name>
+    <url-pattern>/admin/TeacherTeamPhotoUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherTeamEdit</servlet-name>
+    <url-pattern>/admin/TeacherTeamEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherTeamDetail</servlet-name>
+    <url-pattern>/admin/TeacherTeamDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherTeamDelete</servlet-name>
+    <url-pattern>/admin/TeacherTeamDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CharacterFunctionsServlet</servlet-name>
+    <url-pattern>/admin/CharacterFunctionsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>characterFunctionsInitEdit</servlet-name>
+    <url-pattern>/admin/characterFunctionsInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CharacterFunctionsEdit</servlet-name>
+    <url-pattern>/admin/CharacterFunctionsEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CharacterDistribution</servlet-name>
+    <url-pattern>/admin/CharacterDistribution</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CharacterDistributionInitEdit</servlet-name>
+    <url-pattern>/admin/CharacterDistributionInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CharacterDistributionEdit</servlet-name>
+    <url-pattern>/admin/CharacterDistributionEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexPermissionInit</servlet-name>
+    <url-pattern>/admin/IndexPermissionInit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ColumnNameManageServlet</servlet-name>
+    <url-pattern>/admin/ColumnNameManageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModuleColumnTypeServlet</servlet-name>
+    <url-pattern>/admin/ModuleColumnTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModuleColumnTypeInitEdit</servlet-name>
+    <url-pattern>/admin/ModuleColumnTypeInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModuleColumnTypeEdit</servlet-name>
+    <url-pattern>/admin/ModuleColumnTypeEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LinksServlet</servlet-name>
+    <url-pattern>/admin/LinksServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LinksInitEdit</servlet-name>
+    <url-pattern>/admin/LinksInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LinksEdit</servlet-name>
+    <url-pattern>/admin/LinksEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LinksDelete</servlet-name>
+    <url-pattern>/admin/LinksDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LinksAdd</servlet-name>
+    <url-pattern>/admin/LinksAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WebTitleInitEdit</servlet-name>
+    <url-pattern>/admin/WebTitleInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WebTitleEdit</servlet-name>
+    <url-pattern>/admin/WebTitleEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePassword</servlet-name>
+    <url-pattern>/admin/ChangePassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddMessageServlet</servlet-name>
+    <url-pattern>/admin/AddMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessageManagement</servlet-name>
+    <url-pattern>/admin/MessageManagement</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateMessageServlet</servlet-name>
+    <url-pattern>/admin/UpdateMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteMessageServlet</servlet-name>
+    <url-pattern>/admin/DeleteMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckMessageServlet</servlet-name>
+    <url-pattern>/admin/CheckMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Test1</servlet-name>
+    <url-pattern>/Test1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublishMessageServlet</servlet-name>
+    <url-pattern>/admin/PublishMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseTeam</servlet-name>
+    <url-pattern>/CourseTeam</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherDetail</servlet-name>
+    <url-pattern>/TeacherDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseConstruction</servlet-name>
+    <url-pattern>/CourseConstruction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseResourse</servlet-name>
+    <url-pattern>/admin/CourseResourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResourseImgUpload</servlet-name>
+    <url-pattern>/admin/ResourseImgUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseResourseServlet</servlet-name>
+    <url-pattern>/CourseResourseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteResourseServlet</servlet-name>
+    <url-pattern>/admin/DeleteResourseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateResourseServlet</servlet-name>
+    <url-pattern>/admin/UpdateResourseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RowNumberInitEdit</servlet-name>
+    <url-pattern>/admin/RowNumberInitEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RowNumberEdit</servlet-name>
+    <url-pattern>/admin/RowNumberEdit</url-pattern>
+  </servlet-mapping>
+</web-app>

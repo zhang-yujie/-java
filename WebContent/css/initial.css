@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+.top {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-direction: row;
+}
+
+.sub1 {
+	height: 90%;
+	width: 520px;
+	border-radius: 20px;
+	border-color: #FDD7C3;
+	border: solid 1px #FDD7C3;
+	margin: 5px 5px;
+}
+
+.middleSub1 {
+	height: 100%;
+	margin: 0px 5px;
+	border-radius: 20px;
+	border-color: #FDD7C3;
+	border: solid 1px #FDD7C3;
+	background-color: white;
+}
+
+.sub2 {
+	width: 420px;
+	height: 90%;
+	border-radius: 20px;
+	border: solid 1px #FDD7C3;
+	margin-left: 10px;
+}
+
+.middle {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-direction: row;
+}
+
+.middleSub2 {
+	width: 420px;
+	height: 250px;
+	border-radius: 20px;
+	border: solid 1px #FDD7C3;
+	margin-left: 10px;
+	background-color: white;
+}
+
+.bottom {
+	width: 935px;
+	height: 250px;
+	padding: 5px 10px;
+	border: solid 1px #FDD7C3;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-left: 5px;
+	background-color: white;
+}
+
+.last {
+	width: 100%;
+	height: 50px;
+	margin-top: -10px;
+}
+
+.last a {
+	color: black;
+	text-decoration: none;
+	cursor: point;
+}
+
+.subTop {
+	height: 17%;
+	width: 510px;
+	position: relative;
+	top: -10px;
+	padding-left: 10px;
+}
+
+.subTop_ {
+	height: 17%;
+	width: 410px;
+	position: relative;
+	padding-left: 10px;
+}
+
+.subBottom {
+	height: 180px;
+	position: relative;
+	top: -20px;
+	padding: 0px 10px;
+}
+
+.subBottom_ {
+	height: 180px;
+	position: relative;
+	top: -20px;
+	padding: 5px 10px;
+}
+
+.subTop1 {
+	height: 17%;
+	width: 510px;
+	background: linear-gradient(#FDD7C3, #FFFFFF);
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	position: relative;
+	top: -16px;
+	padding-left: 10px;
+}
+
+.subTop2 {
+	height: 17%;
+	width: 410px;
+	background: linear-gradient(#FDD7C3, #FFFFFF);
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	position: relative;
+	padding-left: 10px;
+	top: -16px;
+}
+
+.img {
+	height: 25px;
+	position: relative;
+	top: 5px;
+}
+
+.img2 {
+	width: 40px;
+	position: relative;
+	top: 10px;
+}
+
+.font1 {
+	font-size: 16px;
+}
+
+.font2 {
+	font-size: 16px;
+	color: rgba(105, 105, 105, 1);
+}
+
+.line {
+	width: 100%;
+	display: inline-block;
+	border-top: 1px solid rgba(105, 105, 105, 1);
+	position: relative;
+}
+
+.table1 {
+	font-size: 14px;
+	margin: 10px 0px;
+	table-layout: fixed;
+}
+
+.td1 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*轮播图*/
+.container {
+	position: relative;
+	width: 870px;
+	height: 180px;
+	margin: 0px auto 0 auto;
+	overflow: hidden;
+	top: 14px;
+	border: solid 1px lightgrey;
+}
+
+.wrap {
+	position: absolute; /* 将wrap设置为绝对定位 */
+	width: 6315px;
+	height: 200px;
+}
+/*将图片向左浮动 设置大小*/
+.container .wrap img {
+	float: left;
+	width: 145px;
+	height: 200px;
+}
+
+/* 设置左右箭头的公共样式*/
+.arrow {
+	position: absolute;
+	top: 35%;
+}
+
+.arrow_left {
+	left: -10px;
+}
+
+.arrow_right {
+	right: -10px;
+}
+
+/* 实心箭头 */
+.arrow-right {
+    font-size: 0px;
+    position: relative;
+    top: -3px;
+    left: 3px;
+    line-height: 0;
+    border-width: 6px;
+    border-color: rgba(105, 105, 105, 1);
+    border-right-width: 0px;
+    border-style: dashed;
+    border-left-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.font3{
+    color: rgba(105, 105, 105, 1);
+    font-size: 13px;
+    margin-left: 270px;
+}
+
+.subBottom a:hover{
+	color:rgba(105, 105, 105, 1);
+}
